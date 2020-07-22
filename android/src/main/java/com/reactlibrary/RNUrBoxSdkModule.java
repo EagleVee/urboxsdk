@@ -8,15 +8,19 @@ import com.facebook.react.bridge.Callback;
 
 public class RNUrBoxSdkModule extends ReactContextBaseJavaModule {
 
-  private final ReactApplicationContext reactContext;
+    private final ReactApplicationContext reactContext;
 
-  public RNUrBoxSdkModule(ReactApplicationContext reactContext) {
-    super(reactContext);
-    this.reactContext = reactContext;
-  }
+    public RNUrBoxSdkModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
 
-  @Override
-  public String getName() {
-    return "RNUrBoxSdk";
-  }
-}
+    @Override
+    public String getName() {
+        return "RNUrBoxSdk";
+    }
+
+    @ReactMethod
+    public void showMessage() {
+        Toast.makeText(reactContext.getApplicationContext(), "NATIVE CODE IS WORKING", Toast.LENGTH_LONG).show();
+    }
