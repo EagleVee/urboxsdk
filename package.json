@@ -1,4 +1,3 @@
-
 {
   "name": "react-native-urbox-sdk",
   "version": "1.0.0",
@@ -7,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/EagleVee/urboxsdk",
+  "repository": "https://github.com/EagleVee/urboxsdk",
   "keywords": [
     "react-native"
   ],
